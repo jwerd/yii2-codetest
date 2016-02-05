@@ -26,10 +26,10 @@ CREATE TABLE `people` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `firstname` varchar(55) COLLATE utf8_bin DEFAULT '0',
   `lastname` varchar(55) COLLATE utf8_bin DEFAULT '0',
-  `dob` varchar(15) COLLATE utf8_bin DEFAULT '0',
+  `dob` date DEFAULT NULL,
   `zip` varchar(15) COLLATE utf8_bin DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38,7 +38,7 @@ CREATE TABLE `people` (
 
 LOCK TABLES `people` WRITE;
 /*!40000 ALTER TABLE `people` DISABLE KEYS */;
-INSERT INTO `people` VALUES (2,'asdfasdf','asdfasdf','2009-01-01','2342'),(4,'dsfsdfsdf','sdfsdfsdf','2015-05-01','12342342');
+INSERT INTO `people` VALUES (2,'asdfasdf','asdfasdf','2009-01-01','2342'),(4,'dsfsdfsdf','sdfsdfsdf','2015-05-01','12342342'),(5,'Jake','Jones','2015-01-01','98661');
 /*!40000 ALTER TABLE `people` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -51,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-02-04 23:40:55
+-- Dump completed on 2016-02-05  0:03:51
